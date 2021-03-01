@@ -2,11 +2,35 @@
  * YOUR CODE HERE *
  ******************/
 
+function getFirstItemFrom(array) {
+  return array[0];
+}
 
+function getLastItemFrom(array) {
+  return array[array.length - 1];
+}
 
+function getIndex3(array) {
+    if(array.length < 4) {
+      return array[array.length - 1];
+    }
 
+    return array[3];
+}
 
+function isLongList(array) {
+  return array.length >= 10;
+}
 
+function firstItemIsNumber(array) {
+  return typeof array[0] === 'number';
+}
+
+function secondCharOfThirdString(array) {
+  const str = array[2];
+  
+  return str[1];
+}
 
  /********************************************
  * CODE DOWN HERE IS FOR INTERNAL USE ONLY. *
